@@ -8,7 +8,7 @@
         "js": [
           "/keybr.com/assets/b2adff700228bf6e.js",
           "/keybr.com/assets/a1dfdb990d0784eb.js",
-          "/keybr.com/assets/a88bdd555e8853d8.js"
+          "/keybr.com/assets/54caf62b58b17db0.js"
         ]
       }
     },
@@ -37,8 +37,8 @@
     "/keybr.com/assets/book-en-jekyll-hyde.js": "/keybr.com/assets/0f28c984e8e40a30.js",
     "/keybr.com/assets/book-es-marianela.js": "/keybr.com/assets/1345ed82950a9362.js",
     "/keybr.com/assets/book-fr-alice-wonderland.js": "/keybr.com/assets/8a7ebdd92579388e.js",
-    "/keybr.com/assets/browser.js": "/keybr.com/assets/a88bdd555e8853d8.js",
-    "/keybr.com/assets/browser.map": "/keybr.com/assets/a88bdd555e8853d8.js.map",
+    "/keybr.com/assets/browser.js": "/keybr.com/assets/54caf62b58b17db0.js",
+    "/keybr.com/assets/browser.map": "/keybr.com/assets/54caf62b58b17db0.js.map",
     "/keybr.com/assets/cormorant-400.cyrillic.woff2": "/keybr.com/assets/6705a11e3cd32c87.woff2",
     "/keybr.com/assets/cormorant-400.latin-ext.woff2": "/keybr.com/assets/3b95fccba12c18fe.woff2",
     "/keybr.com/assets/cormorant-400.latin.woff2": "/keybr.com/assets/f5e33a67358923f6.woff2",

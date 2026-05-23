@@ -129,6 +129,10 @@ export class LessonKeys implements Iterable<LessonKey> {
     return [...this.#keys.values()].find((key) => key.isFocused) ?? null;
   }
 
+  findFocusedKeys(): LessonKey[] {
+    return [...this.#keys.values()].filter((key) => key.isFocused);
+  }
+
   include({ codePoint }: Letter): void {
     this.#keys.set(codePoint, this.#keys.get(codePoint)!.asIncluded());
   }

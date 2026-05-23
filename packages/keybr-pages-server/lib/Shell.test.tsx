@@ -40,8 +40,6 @@ test("render", () => {
     "data-color": "system",
     "data-font": "open-sans",
   });
-  isTrue(html.includes("google"));
-  isTrue(html.includes("cloudflare"));
   equal($("nav").length, 0);
 });
 

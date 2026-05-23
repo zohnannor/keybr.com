@@ -36,7 +36,7 @@ test("provide key set", () => {
       confidence: null,
       bestConfidence: null,
       isIncluded: true,
-      isFocused: false,
+      isFocused: true,
       isForced: false,
     }),
     new LessonKey({
@@ -47,7 +47,7 @@ test("provide key set", () => {
       confidence: null,
       bestConfidence: null,
       isIncluded: true,
-      isFocused: false,
+      isFocused: true,
       isForced: false,
     }),
     new LessonKey({
@@ -58,7 +58,7 @@ test("provide key set", () => {
       confidence: null,
       bestConfidence: null,
       isIncluded: true,
-      isFocused: false,
+      isFocused: true,
       isForced: false,
     }),
     new LessonKey({
@@ -69,7 +69,7 @@ test("provide key set", () => {
       confidence: null,
       bestConfidence: null,
       isIncluded: true,
-      isFocused: false,
+      isFocused: true,
       isForced: false,
     }),
     new LessonKey({
@@ -80,7 +80,7 @@ test("provide key set", () => {
       confidence: null,
       bestConfidence: null,
       isIncluded: true,
-      isFocused: false,
+      isFocused: true,
       isForced: false,
     }),
   ]);
@@ -294,7 +294,7 @@ describe("unlock keys", () => {
             ]),
           ),
         ),
-        "[A]BCDEF",
+        "[A][B][C][D][E][F]",
       );
     });
 
@@ -318,7 +318,7 @@ describe("unlock keys", () => {
             ]),
           ),
         ),
-        "[A]BCDEF",
+        "[A][B][C][D][E][F]",
       );
     });
   });
@@ -419,7 +419,7 @@ describe("unlock keys", () => {
               ]),
             ),
           ),
-          "[A]BCDEFJ",
+          "[A][B][C][D][E][F]J",
         );
       });
     });
@@ -521,7 +521,7 @@ describe("unlock keys", () => {
               ]),
             ),
           ),
-          "[A]BCDEFJ",
+          "[A][B][C][D][E][F]J",
         );
       });
     });
@@ -653,7 +653,7 @@ describe("unlock keys", () => {
               ]),
             ),
           ),
-          "[A]BCDEF!G!H!I!J",
+          "[A][B][C][D][E][F][!G][!H][!I][!J]",
         );
       });
 
@@ -679,7 +679,7 @@ describe("unlock keys", () => {
               ]),
             ),
           ),
-          "[A]BCDEF!G!H!I!J",
+          "[A][B][C][D][E][F][!G][!H][!I][!J]",
         );
       });
     });

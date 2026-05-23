@@ -198,15 +198,25 @@ class PrefixList {
   }
 
   findPrefixes(filter: Filter): Prefix[] {
-    const { focusedCodePoint } = filter;
-    if (focusedCodePoint != null) {
-      const prefixes = this.map
-        .get(focusedCodePoint)!
-        .filter((prefix) => prefix.matches(filter));
-      if (prefixes.length > 0) {
-        return prefixes;
+    const { focusedCodePoints } = filter;
+    if (focusedCodePoints != null && focusedCodePoints.length > 0) {
+      const allPrefixes: Prefix[] = [];
+      for (const cp of focusedCodePoints) {
+        const prefixes = this.map
+          .get(cp)!
+          .filter((prefix) => prefix.matches(filter));
+        allPrefixes.push(...prefixes);
+      }
+      if (allPrefixes.length > 0) {
+        const matchingAll = allPrefixes.filter((prefix) =>
+          focusedCodePoints.every((cp) => prefix.codePoints.includes(cp)),
+        );
+        if (matchingAll.length > 0) {
+          return matchingAll;
+        }
+        return allPrefixes;
       } else {
-        return [new Prefix([focusedCodePoint])];
+        return focusedCodePoints.map((cp) => new Prefix([cp]));
       }
     } else {
       return [];

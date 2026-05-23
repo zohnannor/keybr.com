@@ -32,10 +32,19 @@ export class Dictionary implements Iterable<string> {
     }
   }
 
-  find({ codePoints, focusedCodePoint }: Filter): WordList {
+  find({ codePoints, focusedCodePoints }: Filter): WordList {
     let words = this.#words;
-    if (focusedCodePoint != null) {
-      words = this.#dict.get(focusedCodePoint) ?? [];
+    if (focusedCodePoints != null && focusedCodePoints.length > 0) {
+      const [first, ...rest] = focusedCodePoints;
+      words = this.#dict.get(first) ?? [];
+      for (const cp of rest) {
+        words = words.filter((word) => word.codePoints.includes(cp));
+      }
+      if (words.length === 0) {
+        words = this.#words.filter((word) =>
+          focusedCodePoints.some((cp) => word.codePoints.includes(cp)),
+        );
+      }
     }
     if (codePoints != null) {
       words = words.filter((word) => word.matches(codePoints));

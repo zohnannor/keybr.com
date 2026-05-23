@@ -38,13 +38,12 @@ export function makeExampleLesson(
 
   const lessonKeys = new LessonKeys(keys);
 
-  // Find the least confident of all included keys and focus on it.
+  // Find all included keys below the target speed and focus on them.
   const candidateKeys = lessonKeys
     .findIncludedKeys()
-    .filter((key) => (key.confidence ?? 0) < 1)
-    .sort((a, b) => (a.confidence ?? 0) - (b.confidence ?? 0));
-  if (candidateKeys.length > 0) {
-    lessonKeys.focus(candidateKeys[0].letter);
+    .filter((key) => (key.confidence ?? 0) < 1);
+  for (const key of candidateKeys) {
+    lessonKeys.focus(key.letter);
   }
 
   return lessonKeys;

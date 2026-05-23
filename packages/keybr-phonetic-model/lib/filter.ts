@@ -13,24 +13,29 @@ export class Filter {
    */
   readonly codePoints: CodePointSet | null;
   /**
-   * Codepoint of the letter which must appear in each generated word.
+   * Codepoints of the letters which must appear in each generated word.
    */
-  readonly focusedCodePoint: CodePoint | null;
+  readonly focusedCodePoints: readonly CodePoint[] | null;
 
   constructor(
     letters0: readonly LetterLike[] | null = null,
-    focused0: LetterLike | null = null,
+    focused0: readonly LetterLike[] | LetterLike | null = null,
   ) {
     const letters = letters0 && letters0.map(Letter.toLetter);
-    const focused = focused0 && Letter.toLetter(focused0);
+    const focused = normalizeFocused(focused0);
     if (letters != null && letters.length === 0) {
       throw new Error();
     }
-    if (letters != null && focused != null && !letters.includes(focused)) {
+    if (
+      letters != null &&
+      focused != null &&
+      !focused.every((f) => letters.includes(f))
+    ) {
       throw new Error();
     }
     this.codePoints = letters && new Set(letters.map(codePointOf));
-    this.focusedCodePoint = focused && codePointOf(focused);
+    this.focusedCodePoints =
+      focused != null && focused.length > 0 ? focused.map(codePointOf) : null;
   }
 
   /**
@@ -42,6 +47,18 @@ export class Filter {
   includes(codePoint: CodePoint): boolean {
     return this.codePoints == null || this.codePoints.has(codePoint);
   }
+}
+
+function normalizeFocused(
+  focused0: readonly LetterLike[] | LetterLike | null,
+): readonly Letter[] | null {
+  if (focused0 == null) {
+    return null;
+  }
+  if (Array.isArray(focused0)) {
+    return focused0.map(Letter.toLetter);
+  }
+  return [Letter.toLetter(focused0 as LetterLike)];
 }
 
 const codePointOf = ({ codePoint }: HasCodePoint): CodePoint => {

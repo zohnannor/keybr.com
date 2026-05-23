@@ -13,12 +13,20 @@ export const CurrentKey = ({
   className?: ClassName;
   lessonKeys: LessonKeys;
 }) => {
-  const focusedKey = lessonKeys.findFocusedKey();
+  const focusedKeys = lessonKeys.findFocusedKeys();
+  const focusedKey = focusedKeys[0] ?? null;
   return (
     <span id={id} className={className}>
       {focusedKey != null ? (
         <>
-          <Key lessonKey={focusedKey} /> <KeyDetails lessonKey={focusedKey} />
+          <span
+            style={{ display: "inline-flex", gap: 2, alignItems: "center" }}
+          >
+            {focusedKeys.map((key) => (
+              <Key key={key.letter.codePoint} lessonKey={key} />
+            ))}
+          </span>
+          <KeyDetails lessonKey={focusedKey} />
         </>
       ) : (
         <span className={styleTextTruncate}>

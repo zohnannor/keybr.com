@@ -92,16 +92,15 @@ export class GuidedLesson extends Lesson {
       }
     }
 
-    // Find the least confident of all included keys and focus on it.
+    // Find all included keys below the target speed and focus on them.
     const confidenceOf = (key: LessonKey): number => {
       return recoverKeys ? (key.confidence ?? 0) : (key.bestConfidence ?? 0);
     };
     const weakestKeys = lessonKeys
       .findIncludedKeys()
-      .filter((key) => confidenceOf(key) < 1)
-      .sort((a, b) => confidenceOf(a) - confidenceOf(b));
-    if (weakestKeys.length > 0) {
-      lessonKeys.focus(weakestKeys[0].letter);
+      .filter((key) => confidenceOf(key) < 1);
+    for (const key of weakestKeys) {
+      lessonKeys.focus(key.letter);
     }
 
     return lessonKeys;
@@ -110,7 +109,7 @@ export class GuidedLesson extends Lesson {
   override generate(lessonKeys: LessonKeys, rng: RNGStream) {
     const filter = new Filter(
       lessonKeys.findIncludedKeys(),
-      lessonKeys.findFocusedKey(),
+      lessonKeys.findFocusedKeys(),
     );
     const wordGenerator = this.#makeWordGenerator(filter, rng);
     const words = mangledWords(

@@ -50,8 +50,12 @@ export function App() {
 
 function PageRoutes() {
   const { locale } = useIntl();
+  const base =
+    typeof window !== "undefined" && (window as any).__BASE__
+      ? (window as any).__BASE__
+      : Pages.intlBase(locale);
   return (
-    <BrowserRouter basename={Pages.intlBase(locale)}>
+    <BrowserRouter basename={base}>
       <Routes>
         <Route
           index={true}

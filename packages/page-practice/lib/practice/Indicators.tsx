@@ -64,7 +64,23 @@ export const Indicators = memo(function Indicators({
           }
         }}
       />
-      <CurrentKeyRow lessonKeys={lessonKeys} names={names} />
+      <CurrentKeyRow
+        lessonKeys={lessonKeys}
+        names={names}
+        onKeyHoverIn={(key, elem) => {
+          setState({ type: "visible-in", key, elem });
+        }}
+        onKeyHoverOut={() => {
+          switch (state.type) {
+            case "visible-in":
+              setState({ type: "hidden" });
+              break;
+            case "visible":
+              setState({ ...state, type: "visible-out" });
+              break;
+          }
+        }}
+      />
       <StreakListRow streakList={streakList} names={names} />
       {dailyGoal.goal > 0 && (
         <DailyGoalRow dailyGoal={dailyGoal} names={names} />

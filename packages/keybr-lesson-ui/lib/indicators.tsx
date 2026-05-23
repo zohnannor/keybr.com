@@ -78,9 +78,13 @@ export const KeySetRow = memo(function KeySetRow({
 export const CurrentKeyRow = memo(function CurrentKeyRow({
   lessonKeys,
   names,
+  onKeyHoverIn,
+  onKeyHoverOut,
 }: {
   lessonKeys: LessonKeys;
   names?: Names;
+  onKeyHoverIn?: (key: LessonKey, elem: Element) => void;
+  onKeyHoverOut?: (key: LessonKey, elem: Element) => void;
 }) {
   const { formatMessage } = useIntl();
   return (
@@ -96,6 +100,8 @@ export const CurrentKeyRow = memo(function CurrentKeyRow({
         id={names?.currentKey}
         className={styles.value}
         lessonKeys={lessonKeys}
+        onKeyHoverIn={onKeyHoverIn}
+        onKeyHoverOut={onKeyHoverOut}
       />
     </div>
   );

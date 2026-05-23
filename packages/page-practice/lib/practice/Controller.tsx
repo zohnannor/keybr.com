@@ -1,6 +1,6 @@
 import { type KeyId, useKeyboard } from "@keybr/keyboard";
 import { type Result } from "@keybr/result";
-import { type LineList } from "@keybr/textinput";
+import { Feedback, type LineList, textInputProps } from "@keybr/textinput";
 import { addKey, deleteKey, emulateLayout } from "@keybr/textinput-events";
 import { makeSoundPlayer } from "@keybr/textinput-sounds";
 import {
@@ -110,6 +110,13 @@ function useLessonState(
           state.lastLesson = null;
           const feedback = state.onInput(event);
           setLines(state.lines);
+          if (
+            feedback === Feedback.Failed &&
+            state.settings.get(textInputProps.autoRestartOnError)
+          ) {
+            handleResetLesson();
+            return;
+          }
           playSounds(feedback);
           timeout.schedule(handleResetLesson, 10000);
         },

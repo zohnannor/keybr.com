@@ -28,18 +28,25 @@ export type TextInputSettings = {
    * to the first character of a next word.
    */
   readonly spaceSkipsWords: boolean;
+  /**
+   * If enabled then making any error will immediately restart the lesson
+   * from the beginning with the same text and no result is saved.
+   */
+  readonly autoRestartOnError: boolean;
 };
 
 export const textInputSettings = {
   stopOnError: true,
   forgiveErrors: true,
   spaceSkipsWords: true,
+  autoRestartOnError: false,
 } as const satisfies TextInputSettings;
 
 export const textInputProps = {
   stopOnError: booleanProp("textInput.stopOnError", true),
   forgiveErrors: booleanProp("textInput.forgiveErrors", true),
   spaceSkipsWords: booleanProp("textInput.spaceSkipsWords", false),
+  autoRestartOnError: booleanProp("textInput.autoRestartOnError", false),
 } as const;
 
 export function toTextInputSettings(settings: Settings): TextInputSettings {
@@ -47,6 +54,7 @@ export function toTextInputSettings(settings: Settings): TextInputSettings {
     stopOnError: settings.get(textInputProps.stopOnError),
     forgiveErrors: settings.get(textInputProps.forgiveErrors),
     spaceSkipsWords: settings.get(textInputProps.spaceSkipsWords),
+    autoRestartOnError: settings.get(textInputProps.autoRestartOnError),
   };
 }
 

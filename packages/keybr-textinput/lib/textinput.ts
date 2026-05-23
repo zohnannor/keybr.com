@@ -8,7 +8,11 @@ import {
   splitStyledText,
   type StyledText,
 } from "./chars.ts";
-import { type TextInputSettings } from "./settings.ts";
+export type TextInputConfig = {
+  readonly stopOnError: boolean;
+  readonly forgiveErrors: boolean;
+  readonly spaceSkipsWords: boolean;
+};
 
 export enum Feedback {
   Succeeded,
@@ -43,7 +47,7 @@ export class TextInput {
 
   constructor(
     text: StyledText,
-    { stopOnError, forgiveErrors, spaceSkipsWords }: TextInputSettings,
+    { stopOnError, forgiveErrors, spaceSkipsWords }: TextInputConfig,
     onStep: StepListener = () => {},
   ) {
     this.text = text;

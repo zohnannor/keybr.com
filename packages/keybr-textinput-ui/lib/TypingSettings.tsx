@@ -57,6 +57,7 @@ export function TypingSettings() {
         <StopOnErrorProp />
         <ForgiveErrorsProp />
         <SpaceSkipsWordsProp />
+        <AutoRestartOnErrorProp />
       </FieldSet>
       <FieldSet
         legend={formatMessage({
@@ -178,6 +179,33 @@ function SpaceSkipsWordsProp() {
             id="settings.spaceSkipsWords.description"
             defaultMessage="If enabled, pressing the space key in the middle of a word will skip the remaining characters of the word and position cursor at the beginning of the next word."
           />
+        </Description>
+      </Explainer>
+    </>
+  );
+}
+
+function AutoRestartOnErrorProp() {
+  const { settings, updateSettings } = useSettings();
+  return (
+    <>
+      <FieldList>
+        <Field>
+          <CheckBox
+            label="Restart on error"
+            checked={settings.get(textInputProps.autoRestartOnError)}
+            onChange={(value) => {
+              updateSettings(
+                settings.set(textInputProps.autoRestartOnError, value),
+              );
+            }}
+          />
+        </Field>
+      </FieldList>
+      <Explainer>
+        <Description>
+          If enabled, the current lesson will immediately fail and restart from
+          the beginning with the same text when you make any mistake.
         </Description>
       </Explainer>
     </>

@@ -20,6 +20,10 @@ export const lessonProps = {
       max: 1,
     }),
     recoverKeys: booleanProp("lesson.guided.recoverKeys", false),
+    maxFocusedKeys: numberProp("lesson.guided.maxFocusedKeys", 36, {
+      min: 1,
+      max: 36,
+    }),
   } as const,
   wordList: {
     wordListSize: numberProp("lesson.wordList.wordListSize", 1000, {

@@ -93,13 +93,14 @@ export class GuidedLesson extends Lesson {
     }
 
     // Find all included keys below the target speed and focus on them.
+    const maxFocusedKeys = this.settings.get(lessonProps.guided.maxFocusedKeys);
     const confidenceOf = (key: LessonKey): number => {
       return recoverKeys ? (key.confidence ?? 0) : (key.bestConfidence ?? 0);
     };
     const weakestKeys = lessonKeys
       .findIncludedKeys()
       .filter((key) => confidenceOf(key) < 1);
-    for (const key of weakestKeys) {
+    for (const key of weakestKeys.slice(0, maxFocusedKeys)) {
       lessonKeys.focus(key.letter);
     }
 

@@ -5,6 +5,7 @@ import { FormattedMessage, useIntl } from "react-intl";
 import { AlphabetSizeProp } from "./AlphabetSizeProp.tsx";
 import { KeyboardOrderProp } from "./KeyboardOrderProp.tsx";
 import { LessonLengthProp } from "./LessonLengthProp.tsx";
+import { MaxFocusedKeysProp } from "./MaxFocusedKeysProp.tsx";
 import { NaturalWordsProp } from "./NaturalWordsProp.tsx";
 import { RecoverKeysProp } from "./RecoverKeysProp.tsx";
 import { RepeatWordsProp } from "./RepeatWordsProp.tsx";
@@ -38,6 +39,7 @@ export function GuidedLessonSettings({
         <KeyboardOrderProp />
         <NaturalWordsProp />
         <RepeatWordsProp />
+        <MaxFocusedKeysProp />
         <AlphabetSizeProp />
         <TextManglingProp />
         <LessonLengthProp />

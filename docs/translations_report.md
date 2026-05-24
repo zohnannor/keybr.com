@@ -1,121 +1,153 @@
 # English
 
-Translated: 342 messages, 4749 words
+Translated: 344 messages, 4776 words
 
 Untranslated: 0 messages, 0 words
 
 # Afrikaans
 
-Translated: 339 messages, 4744 words
+Translated: 337 messages, 4735 words
 
-Untranslated: 3 messages, 5 words
+Untranslated: 7 messages, 41 words
 
 * *Letters*
 * *Volume:*
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Arabic
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Bulgarian
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Bangla
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Catalan
 
-Translated: 310 messages, 3556 words
+Translated: 308 messages, 3547 words
 
-Untranslated: 30 messages, 1171 words
+Untranslated: 34 messages, 1207 words
 
 * *Errors*
 * *Zones:*
+* *Import data*
 * *Sound theme:*
 * *Explain charts*
 * *Key sounds only*
 * *Relative Accuracy*
 * *Repeat each word:*
+* *Max targeted keys:*
 * *The previous keys are also above the target speed*
+* *Import typing data from a previously exported JSON file.*
 * *Generate lessons that resemble the specified programming lan...*
 * *Practice punctuation characters that are specific to a progr...*
 * *This is a histogram of the accuracies of all users, and your...*
 * *Show color coding of the keyboard zones. Use this option to ...*
 * *Generate typing lessons from the text of a book. All keys ar...*
+* *Limit the number of keys simultaneously targeted for practic...*
 * *Highlight a key that must to be pressed next. Use this optio...*
 * *<p>This indicator shows the current subset of letters used t...*
 * *Repeat each word a number of times. Type a word for the firs...*
-* *See how accurate you type relative to other users. The highe...*
-* *Adjust the amount of basic punctuation characters added to t...*
-* *<p>This indicator can also be used to predict the remaining ...*
-* *<p>This is the accuracy indicator and the difference from th...*
 * ...
 
 # Czech
 
-Translated: 338 messages, 4742 words
+Translated: 336 messages, 4733 words
 
-Untranslated: 4 messages, 7 words
+Untranslated: 8 messages, 43 words
 
 * *Font:*
 * *Syntax:*
+* *Import data*
 * *Sound theme:*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Danish
 
-Translated: 331 messages, 4689 words
+Translated: 329 messages, 4680 words
 
-Untranslated: 9 messages, 38 words
+Untranslated: 13 messages, 74 words
 
 * *Score*
 * *Layout*
 * *Layout:*
 * *Layouts*
 * *Position*
+* *Import data*
 * *Multiplayer*
 * *Download data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 * *Repeat each word a number of times. Type a word for the firs...*
 
 # German
 
-Translated: 339 messages, 4744 words
+Translated: 337 messages, 4735 words
 
-Untranslated: 3 messages, 5 words
+Untranslated: 7 messages, 41 words
 
 * *Position*
 * *Alphabet:*
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Greek
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Esperanto
 
-Translated: 77 messages, 1126 words
+Translated: 75 messages, 1117 words
 
-Untranslated: 258 messages, 3565 words
+Untranslated: 262 messages, 3601 words
 
 * *GO!*
 * *Copy*
@@ -141,38 +173,49 @@ Untranslated: 258 messages, 3565 words
 
 # Spanish
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Estonian
 
-Translated: 338 messages, 4743 words
+Translated: 336 messages, 4734 words
 
-Untranslated: 4 messages, 6 words
+Untranslated: 8 messages, 42 words
 
 * *GO!*
 * *Font:*
 * *Progress*
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Persian
 
-Translated: 295 messages, 2959 words
+Translated: 293 messages, 2950 words
 
-Untranslated: 45 messages, 1768 words
+Untranslated: 49 messages, 1804 words
 
 * *Books*
 * *Zones:*
 * *Syntax:*
+* *Import data*
 * *Sound theme:*
 * *Top accuracy*
 * *Explain charts*
 * *Key sounds only*
 * *Repeat each word:*
+* *Max targeted keys:*
 * *Keyboard hardware emulates layout*
+* *Import typing data from a previously exported JSON file.*
 * *Circle color: {label1} – hit count, {label2} – miss count.*
 * *Practice punctuation characters that are specific to a progr...*
 * *Show color coding of the keyboard zones. Use this option to ...*
@@ -181,16 +224,13 @@ Untranslated: 45 messages, 1768 words
 * *Horizontal axis: lesson number. Vertical axis: typing speed ...*
 * *<a>Benford’s law</a> is an observation that in many real-lif...*
 * *You don’t have any accuracy streaks. Consider completing a l...*
-* *These are the typing assists which help your preserve your c...*
-* *Horizontal axis: lesson number. Vertical axis: {label1} – ty...*
-* *Horizontal axis: lesson number. Vertical axis: {label1} – ty...*
 * ...
 
 # Finnish
 
-Translated: 208 messages, 2284 words
+Translated: 206 messages, 2275 words
 
-Untranslated: 128 messages, 2409 words
+Untranslated: 132 messages, 2445 words
 
 * *GO!*
 * *Time*
@@ -206,19 +246,19 @@ Untranslated: 128 messages, 2409 words
 * *Characters*
 * *Top speed!*
 * *High Scores*
+* *Import data*
 * *Multiplayer*
 * *Smoothness:*
 * *Play sounds:*
 * *Average speed*
 * *Benford’s law*
-* *Download data*
 * ...
 
 # Faroese
 
-Translated: 44 messages, 583 words
+Translated: 42 messages, 574 words
 
-Untranslated: 290 messages, 4097 words
+Untranslated: 294 messages, 4133 words
 
 * *GO!*
 * *Copy*
@@ -244,75 +284,99 @@ Untranslated: 290 messages, 4097 words
 
 # French
 
-Translated: 333 messages, 4544 words
+Translated: 331 messages, 4535 words
 
-Untranslated: 9 messages, 205 words
+Untranslated: 13 messages, 241 words
 
 * *Zones:*
 * *Options*
 * *Volume:*
 * *Position*
 * *Alphabet:*
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 * *Above are listed the longest continuous sequences of lessons...*
 * *When you focus on a new key, it is very likely that the spee...*
 * *The target speed is used to measure the confidence level and...*
 
 # Irish
 
-Translated: 337 messages, 4735 words
+Translated: 335 messages, 4726 words
 
-Untranslated: 5 messages, 14 words
+Untranslated: 9 messages, 50 words
 
 * *Zones:*
+* *Import data*
 * *Smoothness:*
 * *Sound theme:*
 * *M|T|W|T|F|S|S*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Hebrew
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Croatian
 
-Translated: 337 messages, 4740 words
+Translated: 335 messages, 4731 words
 
-Untranslated: 5 messages, 9 words
+Untranslated: 9 messages, 45 words
 
 * *Font:*
 * *Reset*
+* *Import data*
 * *Multiplayer*
 * *Key sounds only*
+* *Max targeted keys:*
 * *Premium account price:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Hungarian
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Indonesian
 
-Translated: 339 messages, 4744 words
+Translated: 337 messages, 4735 words
 
-Untranslated: 3 messages, 5 words
+Untranslated: 7 messages, 41 words
 
 * *GO!*
 * *Volume:*
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Icelandic
 
-Translated: 95 messages, 1742 words
+Translated: 93 messages, 1733 words
 
-Untranslated: 240 messages, 2949 words
+Untranslated: 244 messages, 2985 words
 
 * *GO!*
 * *Copy*
@@ -338,9 +402,9 @@ Untranslated: 240 messages, 2949 words
 
 # Italian
 
-Translated: 334 messages, 4738 words
+Translated: 332 messages, 4729 words
 
-Untranslated: 7 messages, 9 words
+Untranslated: 11 messages, 45 words
 
 * *Font:*
 * *Layout*
@@ -348,21 +412,29 @@ Untranslated: 7 messages, 9 words
 * *Layout:*
 * *Layouts*
 * *Volume:*
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Japanese
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Korean
 
-Translated: 145 messages, 1297 words
+Translated: 143 messages, 1288 words
 
-Untranslated: 195 messages, 3430 words
+Untranslated: 199 messages, 3466 words
 
 * *Copy*
 * *Done*
@@ -388,17 +460,20 @@ Untranslated: 195 messages, 3430 words
 
 # Lithuanian
 
-Translated: 305 messages, 3388 words
+Translated: 303 messages, 3379 words
 
-Untranslated: 34 messages, 1330 words
+Untranslated: 38 messages, 1366 words
 
+* *Import data*
 * *Key sounds only*
 * *Accuracy Streaks*
 * *Relative Accuracy*
+* *Max targeted keys:*
 * *No accuracy streaks.*
 * *Practice numbers only.*
 * *The difference from the average value.*
 * *Download all your typing data in JSON format.*
+* *Import typing data from a previously exported JSON file.*
 * *The detailed statistics regarding your learning progress.*
 * *Permanently delete all of your typing data and reset statist...*
 * *This is a histogram of the accuracies of all users, and your...*
@@ -406,19 +481,16 @@ Untranslated: 34 messages, 1330 words
 * *Show color coding of the keyboard zones. Use this option to ...*
 * *Are you sure you want to delete all data and reset your prof...*
 * *You don’t have any accuracy streaks. Consider completing a l...*
+* *Limit the number of keys simultaneously targeted for practic...*
 * *Highlight a key that must to be pressed next. Use this optio...*
 * *<p>This indicator shows the current subset of letters used t...*
-* *Repeat each word a number of times. Type a word for the firs...*
-* *See how accurate you type relative to other users. The highe...*
-* *Manually unlock the remaining letters. Use this option if wa...*
-* *Adjust the amount of capital letters added to the lesson tex...*
 * ...
 
 # Mongolian
 
 Translated: 16 messages, 378 words
 
-Untranslated: 316 messages, 4273 words
+Untranslated: 318 messages, 4300 words
 
 * *GO!*
 * *Copy*
@@ -444,9 +516,9 @@ Untranslated: 316 messages, 4273 words
 
 # Norwegian Bokmål
 
-Translated: 211 messages, 2446 words
+Translated: 209 messages, 2437 words
 
-Untranslated: 126 messages, 2250 words
+Untranslated: 130 messages, 2286 words
 
 * *Done*
 * *Help*
@@ -463,60 +535,76 @@ Untranslated: 126 messages, 2250 words
 * *Last speed*
 * *Custom text*
 * *Daily goal:*
+* *Import data*
 * *Smoothness:*
 * *Whitespace:*
 * *Cursor shape:*
 * *Learning rate*
-* *No whitespace*
 * ...
 
 # Nepali
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Dutch
 
-Translated: 333 messages, 4736 words
+Translated: 331 messages, 4727 words
 
-Untranslated: 8 messages, 11 words
+Untranslated: 12 messages, 47 words
 
 * *Score*
 * *Zones:*
 * *Account*
 * *Letters*
 * *Volume:*
+* *Import data*
 * *Multiplayer*
 * *Key sounds only*
 * *Premium account*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Polish
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Brazilian Portuguese
 
-Translated: 338 messages, 4743 words
+Translated: 336 messages, 4734 words
 
-Untranslated: 4 messages, 6 words
+Untranslated: 8 messages, 42 words
 
 * *Layout*
 * *Layout:*
 * *Layouts*
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # European Portuguese
 
-Translated: 319 messages, 4618 words
+Translated: 317 messages, 4609 words
 
-Untranslated: 21 messages, 109 words
+Untranslated: 25 messages, 145 words
 
 * *Books*
 * *Layout*
@@ -526,6 +614,7 @@ Untranslated: 21 messages, 109 words
 * *Volume:*
 * *Top score!*
 * *Top speed!*
+* *Import data*
 * *Sound theme:*
 * *Top accuracy*
 * *Explain charts*
@@ -533,18 +622,17 @@ Untranslated: 21 messages, 109 words
 * *Average accuracy*
 * *Relative Accuracy*
 * *Repeat each word:*
+* *Max targeted keys:*
 * *Daily goal reached!*
 * *New letter unlocked!*
 * *Premium account price:*
-* *This is a histogram of the accuracies of all users, and your...*
-* *Repeat each word a number of times. Type a word for the firs...*
 * ...
 
 # Romanian
 
-Translated: 298 messages, 3587 words
+Translated: 296 messages, 3578 words
 
-Untranslated: 37 messages, 1118 words
+Untranslated: 41 messages, 1154 words
 
 * *Font:*
 * *Layout*
@@ -553,6 +641,7 @@ Untranslated: 37 messages, 1118 words
 * *Layout:*
 * *Layouts*
 * *Translate*
+* *Import data*
 * *Multiplayer*
 * *Sound theme:*
 * *Top accuracy*
@@ -561,81 +650,104 @@ Untranslated: 37 messages, 1118 words
 * *Average accuracy*
 * *Relative Accuracy*
 * *Repeat each word:*
+* *Max targeted keys:*
 * *Start in {countDown}*
 * *Premium account price:*
 * *Enter full-screen mode.*
-* *<h1>Connecting to Server...</h1><p>Establishing connection t...*
-* *<p>The precise meaning of each indicator color is given in t...*
 * ...
 
 # Russian
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Slovak
 
-Translated: 340 messages, 4745 words
+Translated: 338 messages, 4736 words
 
-Untranslated: 2 messages, 4 words
+Untranslated: 6 messages, 40 words
 
 * *Syntax:*
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Slovenian
 
-Translated: 340 messages, 4745 words
+Translated: 338 messages, 4736 words
 
-Untranslated: 2 messages, 4 words
+Untranslated: 6 messages, 40 words
 
 * *Font:*
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Albanian
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Swedish
 
-Translated: 338 messages, 4743 words
+Translated: 336 messages, 4734 words
 
-Untranslated: 4 messages, 6 words
+Untranslated: 8 messages, 42 words
 
 * *Layout*
 * *Layout:*
 * *Syntax:*
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Thai
 
-Translated: 329 messages, 4635 words
+Translated: 327 messages, 4626 words
 
-Untranslated: 11 messages, 92 words
+Untranslated: 15 messages, 128 words
 
 * *Zones:*
+* *Import data*
 * *Sound theme:*
 * *Top accuracy*
 * *Key sounds only*
 * *Average accuracy*
 * *Relative Accuracy*
 * *Repeat each word:*
+* *Max targeted keys:*
 * *Premium account price:*
+* *Import typing data from a previously exported JSON file.*
 * *This is a histogram of the accuracies of all users, and your...*
+* *Limit the number of keys simultaneously targeted for practic...*
 * *Repeat each word a number of times. Type a word for the firs...*
 * *See how accurate you type relative to other users. The highe...*
 
 # Turkish
 
-Translated: 227 messages, 2126 words
+Translated: 225 messages, 2117 words
 
-Untranslated: 110 messages, 2568 words
+Untranslated: 114 messages, 2604 words
 
 * *Books*
 * *Font:*
@@ -646,6 +758,7 @@ Untranslated: 110 messages, 2568 words
 * *Syntax:*
 * *Alphabet:*
 * *Box cursor*
+* *Import data*
 * *Line cursor*
 * *Source code*
 * *Whitespace:*
@@ -656,47 +769,66 @@ Untranslated: 110 messages, 2568 words
 * *Bar whitespace*
 * *Emulate layout*
 * *Explain charts*
-* *Highlight keys*
 * ...
 
 # Ukrainian
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Vietnamese
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Simplified Chinese
 
-Translated: 340 messages, 4739 words
+Translated: 338 messages, 4730 words
 
-Untranslated: 2 messages, 10 words
+Untranslated: 6 messages, 46 words
 
+* *Import data*
 * *M|T|W|T|F|S|S*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Traditional Chinese
 
-Translated: 341 messages, 4746 words
+Translated: 339 messages, 4737 words
 
-Untranslated: 1 messages, 3 words
+Untranslated: 5 messages, 39 words
 
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*
 
 # Chinese (Taiwan)
 
-Translated: 340 messages, 4745 words
+Translated: 338 messages, 4736 words
 
-Untranslated: 2 messages, 4 words
+Untranslated: 6 messages, 40 words
 
 * *GO!*
+* *Import data*
 * *Key sounds only*
+* *Max targeted keys:*
+* *Import typing data from a previously exported JSON file.*
+* *Limit the number of keys simultaneously targeted for practic...*

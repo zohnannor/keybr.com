@@ -16,7 +16,7 @@ import {
 } from "@keybr/result";
 import { useSettings } from "@keybr/settings";
 import { Field, FieldList, OptionList } from "@keybr/widget";
-import { type ReactNode, useState } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 import { FormattedMessage, useIntl } from "react-intl";
 
 export function ResultGrouper({
@@ -39,9 +39,11 @@ export function ResultGrouper({
       : [...resultsLayouts][0];
   const [selectedLayout, setSelectedLayout] = useState(defaultLayout);
   const [characterClass, setCharacterClass] = useState("letters");
-  if (!resultsLayouts.has(selectedLayout)) {
-    setSelectedLayout(defaultLayout());
-  }
+  useEffect(() => {
+    if (!resultsLayouts.has(selectedLayout)) {
+      setSelectedLayout(defaultLayout());
+    }
+  });
   const layoutOptions = useLayoutOptions(resultsLayouts);
   const keyboard = loadKeyboard(selectedLayout);
   const group = groups.get(selectedLayout);

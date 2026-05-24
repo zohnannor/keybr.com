@@ -40,6 +40,10 @@ function html(title) {
 <title>${title}</title>
 <link rel="icon" href="${BASE}favicon.ico" sizes="any">
 ${cssFiles.map((f) => `<link rel="stylesheet" href="${f}">`).join("\n")}
+<style>
+body { margin: 0; }
+#root { min-height: 100vh; background-color: var(--background-color, #f4f0f0); }
+</style>
 </head>
 <body>
 <div id="root"></div>

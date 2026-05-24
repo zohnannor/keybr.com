@@ -24,17 +24,21 @@ export const CurrentKey = ({
       {focusedKey != null ? (
         <span
           style={{
-            display: "inline-flex",
+            display: "flex",
+            flexDirection: "column",
             gap: "0.5rem",
-            alignItems: "center",
           }}
         >
-          <span
-            style={{ display: "inline-flex", gap: 2, alignItems: "center" }}
-          >
-            {focusedKeys.map((key) => (
+          {focusedKeys.map((key) => (
+            <span
+              key={key.letter.codePoint}
+              style={{
+                display: "inline-flex",
+                gap: "0.5rem",
+                alignItems: "center",
+              }}
+            >
               <Key
-                key={key.letter.codePoint}
                 lessonKey={key}
                 onMouseOver={(e) => {
                   const k = Key.attached(e.currentTarget);
@@ -45,9 +49,9 @@ export const CurrentKey = ({
                   if (k != null) onKeyHoverOut?.(k, e.currentTarget);
                 }}
               />
-            ))}
-          </span>
-          <KeyDetails lessonKey={focusedKey} />
+              <KeyDetails lessonKey={key} />
+            </span>
+          ))}
         </span>
       ) : (
         <span className={styleTextTruncate}>

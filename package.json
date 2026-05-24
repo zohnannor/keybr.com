@@ -3,12 +3,12 @@
   "name": "keybr.com",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://www.keybr.com",
+  "homepage": "https://zohnannor.github.io/keybr.com",
   "license": "GPL-3",
   "author": "Aliaksandr Radzivanovich <aradzivanovich@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:aradzie/keybr.com.git"
+    "url": "git@github.com:zohnannor/keybr.com.git"
   },
   "workspaces": [
     "packages/*",

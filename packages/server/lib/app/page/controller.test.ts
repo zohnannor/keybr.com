@@ -9,6 +9,10 @@ import { startApp } from "../test/request.ts";
 
 const context = new TestContext();
 
+const { protocol: canonicalProto, hostname: canonicalHost } = new URL(
+  context.get("canonicalUrl"),
+);
+
 for (const path of [
   "/",
   "/account",
@@ -35,8 +39,8 @@ for (const path of [
 
     const response = await request
       .GET(path)
-      .header("X-Forwarded-Host", "www.keybr.com")
-      .header("X-Forwarded-Proto", "https")
+      .header("X-Forwarded-Host", canonicalHost)
+      .header("X-Forwarded-Proto", canonicalProto.slice(0, -1))
       .send();
 
     // Assert.
@@ -59,8 +63,8 @@ test(`load custom theme from cookie`, async () => {
 
   const response = await request
     .GET("/")
-    .header("X-Forwarded-Host", "www.keybr.com")
-    .header("X-Forwarded-Proto", "https")
+    .header("X-Forwarded-Host", canonicalHost)
+    .header("X-Forwarded-Proto", canonicalProto.slice(0, -1))
     .header(
       "Cookie",
       new Cookie([["prefs", '{"color":"dark","font":"spectral"}']]),
@@ -87,8 +91,8 @@ test(`ignore invalid theme cookie`, async () => {
 
   const response = await request
     .GET("/")
-    .header("X-Forwarded-Host", "www.keybr.com")
-    .header("X-Forwarded-Proto", "https")
+    .header("X-Forwarded-Host", canonicalHost)
+    .header("X-Forwarded-Proto", canonicalProto.slice(0, -1))
     .header("Cookie", new Cookie([["prefs", "%%%garbage%%%"]]))
     .send();
 

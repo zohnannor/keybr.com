@@ -9,6 +9,10 @@ import { startApp } from "../test/request.ts";
 
 const context = new TestContext();
 
+const { protocol: canonicalProto, hostname: canonicalHost } = new URL(
+  context.get("canonicalUrl"),
+);
+
 test("load sitemap.xml", async () => {
   // Arrange.
 
@@ -18,8 +22,8 @@ test("load sitemap.xml", async () => {
 
   const response = await request
     .GET("/sitemap.xml")
-    .header("X-Forwarded-Host", "www.keybr.com")
-    .header("X-Forwarded-Proto", "https")
+    .header("X-Forwarded-Host", canonicalHost)
+    .header("X-Forwarded-Proto", canonicalProto.slice(0, -1))
     .send();
   const body = await response.body.text();
 
@@ -51,8 +55,8 @@ test("load sitemap.xml", async () => {
 
     const response = await request
       .GET(new URL(url).pathname)
-      .header("X-Forwarded-Host", "www.keybr.com")
-      .header("X-Forwarded-Proto", "https")
+      .header("X-Forwarded-Host", canonicalHost)
+      .header("X-Forwarded-Proto", canonicalProto.slice(0, -1))
       .send();
 
     // Assert.

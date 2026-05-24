@@ -28,6 +28,7 @@ function html(title) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title}</title>
+<link rel="icon" href="${BASE}favicon.ico" sizes="any">
 ${cssFiles.map((f) => `<link rel="stylesheet" href="${f}">`).join("\n")}
 </head>
 <body>

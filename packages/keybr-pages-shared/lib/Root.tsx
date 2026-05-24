@@ -1,12 +1,14 @@
+import "./Root.module.less";
 import { type ReactNode } from "react";
-import * as styles from "./Root.module.less";
+
+export const ROOT_ID = "root";
 
 export function Root({
   children,
 }: {
   readonly children?: ReactNode;
 }): ReactNode {
-  return <div id={styles.root}>{children}</div>;
+  return <div id={ROOT_ID}>{children}</div>;
 }
 
-Root.selector = `#${styles.root}`;
+Root.selector = `#${ROOT_ID}`;

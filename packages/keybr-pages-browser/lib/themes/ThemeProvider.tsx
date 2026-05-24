@@ -22,6 +22,9 @@ export function ThemeProvider({ children }: { readonly children: ReactNode }) {
   usePreferredColorScheme();
 
   useEffect(() => {
+    const elem = document.documentElement;
+    elem.setAttribute(ThemePrefs.colorAttrName, color);
+    elem.setAttribute(ThemePrefs.fontAttrName, font);
     if (color === "custom") {
       readTheme()
         .then(({ theme }) => {
@@ -33,7 +36,7 @@ export function ThemeProvider({ children }: { readonly children: ReactNode }) {
     } else {
       clearTheme();
     }
-  }, [color]);
+  }, [color, font]);
 
   return (
     <ThemeContext.Provider
@@ -85,6 +88,7 @@ function storePrefs(prefs: ThemePrefs) {
     new SetCookie(ThemePrefs.cookieKey, ThemePrefs.serialize(prefs), {
       maxAge: 100 * 24 * 60 * 60,
       sameSite: "Lax",
+      path: "/",
     }),
   );
 }

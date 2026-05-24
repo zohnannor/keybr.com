@@ -5,7 +5,7 @@ import { hasData } from "@keybr/math";
 import { type KeyStatsMap } from "@keybr/result";
 import { useSettings } from "@keybr/settings";
 import { Explainer, Figure, Para } from "@keybr/widget";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { ChartWrapper } from "./ChartWrapper.tsx";
 import { SmoothnessRange } from "./SmoothnessRange.tsx";
@@ -21,10 +21,11 @@ export function KeySpeedChartSection({
   const [smoothness, setSmoothness] = useState(0.5);
   const target = new Target(settings);
 
-  if (!letters.includes(current)) {
-    setCurrent(letters[0]);
-    return null;
-  }
+  useEffect(() => {
+    if (!letters.includes(current)) {
+      setCurrent(letters[0]);
+    }
+  }, [letters, current]);
 
   const keyStats = keyStatsMap.get(current);
   const { samples } = keyStats;

@@ -3,19 +3,19 @@
     "browser": {
       "assets": {
         "css": [
-          "/keybr.com/assets/289e9fe1693351fc.css"
+          "/keybr.com/assets/d0dcfb471bb25f5c.css"
         ],
         "js": [
           "/keybr.com/assets/b2adff700228bf6e.js",
           "/keybr.com/assets/a1dfdb990d0784eb.js",
-          "/keybr.com/assets/452e6f2957a87aa6.js"
+          "/keybr.com/assets/ddeac323236d6e48.js"
         ]
       }
     },
     "server": {
       "assets": {
         "css": [
-          "/keybr.com/assets/289e9fe1693351fc.css"
+          "/keybr.com/assets/d0dcfb471bb25f5c.css"
         ],
         "js": [
           "/keybr.com/assets/c45db7b0a3a5e825.js"
@@ -37,8 +37,8 @@
     "/keybr.com/assets/book-en-jekyll-hyde.js": "/keybr.com/assets/0f28c984e8e40a30.js",
     "/keybr.com/assets/book-es-marianela.js": "/keybr.com/assets/1345ed82950a9362.js",
     "/keybr.com/assets/book-fr-alice-wonderland.js": "/keybr.com/assets/8a7ebdd92579388e.js",
-    "/keybr.com/assets/browser.js": "/keybr.com/assets/452e6f2957a87aa6.js",
-    "/keybr.com/assets/browser.map": "/keybr.com/assets/452e6f2957a87aa6.js.map",
+    "/keybr.com/assets/browser.js": "/keybr.com/assets/ddeac323236d6e48.js",
+    "/keybr.com/assets/browser.map": "/keybr.com/assets/ddeac323236d6e48.js.map",
     "/keybr.com/assets/cormorant-400.cyrillic.woff2": "/keybr.com/assets/6705a11e3cd32c87.woff2",
     "/keybr.com/assets/cormorant-400.latin-ext.woff2": "/keybr.com/assets/3b95fccba12c18fe.woff2",
     "/keybr.com/assets/cormorant-400.latin.woff2": "/keybr.com/assets/f5e33a67358923f6.woff2",
@@ -324,8 +324,8 @@
     "/keybr.com/assets/spectral-700italic.cyrillic.woff2": "/keybr.com/assets/83379485b8ddd029.woff2",
     "/keybr.com/assets/spectral-700italic.latin-ext.woff2": "/keybr.com/assets/04760db4d5df55e1.woff2",
     "/keybr.com/assets/spectral-700italic.latin.woff2": "/keybr.com/assets/96a06e213837c56d.woff2",
-    "/keybr.com/assets/styles.css": "/keybr.com/assets/289e9fe1693351fc.css",
-    "/keybr.com/assets/styles.map": "/keybr.com/assets/289e9fe1693351fc.css.map",
+    "/keybr.com/assets/styles.css": "/keybr.com/assets/d0dcfb471bb25f5c.css",
+    "/keybr.com/assets/styles.map": "/keybr.com/assets/d0dcfb471bb25f5c.css.map",
     "/keybr.com/assets/typewriter1-click1.mp3": "/keybr.com/assets/88ed06c339fe6218.mp3",
     "/keybr.com/assets/typewriter1-click2.mp3": "/keybr.com/assets/5ea004f3d755df05.mp3",
     "/keybr.com/assets/typewriter1-click3.mp3": "/keybr.com/assets/b38ad7ea57d66a49.mp3",

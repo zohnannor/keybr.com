@@ -33,11 +33,27 @@ export function Chart({
   );
 }
 
-export function chartArea(styles: ChartStyles, cb: (d: Rect) => ShapeList) {
+export function chartArea(
+  styles: ChartStyles,
+  cb: (d: Rect) => ShapeList,
+  padding?: {
+    left?: number;
+    right?: number;
+    top?: number;
+    bottom?: number;
+  },
+) {
   return ({ width, height }: Size) => {
-    const h = styles.lineHeight * 5;
-    const v = styles.lineHeight * 2;
-    const area = new Rect(h, v, width - h * 2, height - v * 2).round();
+    const left = styles.lineHeight * (padding?.left ?? 5);
+    const right = styles.lineHeight * (padding?.right ?? 5);
+    const top = styles.lineHeight * (padding?.top ?? 2);
+    const bottom = styles.lineHeight * (padding?.bottom ?? 2);
+    const area = new Rect(
+      left,
+      top,
+      width - left - right,
+      height - top - bottom,
+    ).round();
     return [Shapes.clear(), cb(area)];
   };
 }

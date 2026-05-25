@@ -43,14 +43,18 @@ export function paintScatterPlot(
   dy: Vector,
   {
     style,
+    minRadius = 2,
+    maxRadius = 6,
   }: {
     readonly style: GraphicsStyle;
+    readonly minRadius?: number;
+    readonly maxRadius?: number;
   },
 ): ShapeList {
   return (g: Graphics): void => {
     g.withStyle(style, () => {
       const r = Math.round(
-        Math.min(Math.max(proj.box.width / dx.length, 2), 6),
+        Math.min(Math.max(proj.box.width / dx.length, minRadius), maxRadius),
       );
       for (let i = 0; i < dx.length; i++) {
         g.fillCircle(proj.x(dx.at(i)), proj.y(dy.at(i)), r);

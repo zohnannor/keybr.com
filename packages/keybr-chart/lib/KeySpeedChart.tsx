@@ -17,15 +17,26 @@ export function KeySpeedChart({
   smoothness,
   width,
   height,
+  padding,
+  showBottomAxis = true,
+  compact,
 }: {
   readonly samples: readonly KeySample[];
   readonly smoothness: number;
+  readonly padding?: {
+    left?: number;
+    right?: number;
+    top?: number;
+    bottom?: number;
+  };
+  readonly showBottomAxis?: boolean;
+  readonly compact?: boolean;
 } & SizeProps): ReactNode {
   const styles = useChartStyles();
-  const paint = usePaint(styles, samples, smoothness);
+  const paint = usePaint(styles, samples, smoothness, showBottomAxis, compact);
   return (
     <Chart width={width} height={height}>
-      <Canvas paint={chartArea(styles, paint)} />
+      <Canvas paint={chartArea(styles, paint, padding)} />
     </Chart>
   );
 }
@@ -34,6 +45,8 @@ function usePaint(
   styles: ChartStyles,
   samples: readonly KeySample[],
   smoothness: number,
+  showBottomAxis: boolean,
+  compact?: boolean,
 ) {
   const { formatMessage } = useIntl();
   const { formatInteger } = useIntlNumbers();
@@ -79,15 +92,23 @@ function usePaint(
       g.paintAxis(box, "left"),
       paintScatterPlot(proj, vIndex, vSpeed, {
         style: styles.speed,
+        ...(compact ? { minRadius: 1, maxRadius: 2 } : {}),
       }),
       paintCurve(proj, mSpeed, {
         style: {
           ...styles.speed,
-          lineWidth: 2,
+          lineWidth: compact ? 1 : 2,
         },
       }),
       paintTargetSpeedLine(),
-      g.paintTicks(box, rIndex, "bottom", { lines: 5, fmt: formatInteger }),
+      ...(showBottomAxis
+        ? [
+            g.paintTicks(box, rIndex, "bottom", {
+              lines: 5,
+              fmt: formatInteger,
+            }),
+          ]
+        : []),
       g.paintTicks(box, rSpeed, "left", { fmt: formatSpeed }),
     ];
 
